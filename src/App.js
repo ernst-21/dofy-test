@@ -10,7 +10,7 @@ function App() {
       <div className="app">
         <div className="components-container">
           <div className="form-container">
-            <h4>Configuración:</h4>
+            <h3 style={{fontSize: '1rem'}} className='form-item__label'>Configuración:</h3>
             <Logo />
             <FormComponent />
           </div>
