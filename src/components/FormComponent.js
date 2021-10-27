@@ -56,7 +56,6 @@ const FormComponent = () => {
 
   const handleFinish = useCallback(
     (values) => {
-      console.log('Submit', values);
       setSettings(values);
       form.resetFields();
     },
