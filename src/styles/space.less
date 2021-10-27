@@ -1,0 +1,31 @@
+.space-radio__wrapper {
+  display: flex;
+  .space-radio__container {
+    flex-direction: column;
+    display: flex;
+    .radio-btn__card {
+      border: 1px solid #E4E4E4;
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 3px;
+      .space-radio__btn {
+        margin: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .space-radio__wrapper {
+    .space-radio__container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      .radio-btn__card {
+        padding: 1em;
+        width: 49%;
+        align-items: center;
+      }
+    }
+  }
+}

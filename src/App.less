@@ -1,0 +1,56 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~antd/dist/antd.less';
+@import '../src/styles/input';
+@import '../src/styles/peopleRadio';
+@import '../src/styles/themeColor';
+@import '../src/styles/space';
+@import '../src/styles/avatar';
+@import '../src/styles/sideview';
+
+@titleColorNormal: red;
+@titleColorMin: green;
+
+.app {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+.ant-form .ant-form-item {
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.components-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em;
+  height: 100%;
+  width: 100vw;
+}
+
+.sideview-container {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .form-container {
+    width: 45%;
+  }
+  .sideview-container {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    min-height: 100%;
+    width: 70%;
+  }
+}
